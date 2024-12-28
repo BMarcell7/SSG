@@ -16,7 +16,7 @@ class TestTextNode(unittest.TestCase):
         
     def test_eq_text(self):
         node = TextNode("This is a text node", TextType.BOLD)
-        node2 = TextNode("This is a text node", TextType.LINKS)
+        node2 = TextNode("This is a text node", TextType.LINK)
         self.assertEqual(node.text, node2.text)
         
     def test_neq_type(self):
